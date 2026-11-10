@@ -12,7 +12,7 @@ export const options = {
 };
 
 export default function () {
-  const response = http.get('http://host.docker.internal:8085');
+  const response = http.get('http://host.docker.internal:8090');
 
   check(response, {
     'status is 200': (r) => r.status === 200,
